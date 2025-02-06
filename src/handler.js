@@ -18,7 +18,7 @@ const xff_depth = parseInt(env('XFF_DEPTH', '1'));
 const address_header = env('ADDRESS_HEADER', '').toLowerCase();
 const protocol_header = env('PROTOCOL_HEADER', '').toLowerCase();
 const host_header = env('HOST_HEADER', 'host').toLowerCase();
-const body_size_limit = parseInt(env('BODY_SIZE_LIMIT', '524288'));
+const body_size_limit = parseInt(env('BODY_SIZE_LIMIT', '52428800'));
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 
